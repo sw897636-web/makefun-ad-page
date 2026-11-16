@@ -51,7 +51,7 @@
   /* ---------- hero ---------- */
   .hero {
     display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px;
-    padding: 56px 0 40px; align-items: center;
+    padding: 42px 0 30px; align-items: center;
   }
   .eyebrow {
     display: inline-block; font-size: 13px; font-weight: 800;
@@ -83,10 +83,11 @@
     padding: 30px 30px 26px; position: relative; overflow: hidden;
   }
   .refcard::after {
-    content: ""; position: absolute; right: -70px; top: -70px;
+    content: ""; position: absolute; right: -84px; top: -88px; z-index: 0;
     width: 210px; height: 210px; border-radius: 50%;
     border: 26px solid rgba(188, 12, 124, 0.55);
   }
+  .refcard > * { position: relative; z-index: 1; }
   .refcard .label {
     font-size: 12px; font-weight: 800; letter-spacing: 0.16em;
     text-transform: uppercase; color: #f2a8d4;
@@ -109,7 +110,7 @@
   /* ---------- prize strip ---------- */
   .strip {
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
-    padding: 8px 0 44px;
+    padding: 8px 0 30px;
   }
   .prize {
     background: var(--card); border: 1px solid var(--line); border-radius: 18px;
@@ -196,7 +197,7 @@
     </div>
     <div class="prize">
       <div class="amount"><span>$250</span></div>
-      <p class="what"><b>First place, Bring the Humans</b> — real money for a single page and a link.</p>
+      <p class="what"><b>First place, Bring the Humans</b> — $250 for a single page and a link that brings real people.</p>
     </div>
   </section>
 
